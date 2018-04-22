@@ -1,6 +1,6 @@
 html,
 body {
-  font-family: 'Quicksand';
+  font-family: 'Cutive Mono';
   font-size: 18px;
   color: #292e3e;
 }
@@ -45,6 +45,13 @@ img {
   -webkit-text-fill-color: transparent;
   text-transform: uppercase;
   font-weight: 900;
+}
+
+@media(max-width: 1100px) {
+  .home__header {
+    background-attachment: fixed;
+    background-size: contain;
+  }
 }
 
 .home__header span {
