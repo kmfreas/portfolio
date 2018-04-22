@@ -1,28 +1,127 @@
-.App {
+html,
+body {
+  font-family: 'Quicksand';
+  font-size: 18px;
+  color: #292e3e;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Oswald';
+}
+
+a {
+  text-decoration: none;
+  color: #80CBC4;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 2rem;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  position: relative;
+  flex-direction: column;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.home__header {
+  background-image: url('img/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  font-weight: 900;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.home__header span {
+  display: block;
+  line-height: 1;
 }
 
-.App-title {
-  font-size: 1.5em;
+.home__header span:first-child {
+  font-size: 20rem;
 }
 
-.App-intro {
-  font-size: large;
+.home__header span:nth-child(2) {
+  font-size: 16rem;
+  margin-top: -20px;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.home__header span:last-child {
+  font-size: 4.2rem;
+}
+
+.home__bottom {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.home__bottom a {
+  font-size: 2rem;
+  padding: 1rem;
+  display: block;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'Oswald';
+}
+
+.navbar {
+  display: flex;
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+.navbar a {
+  display: block;
+  padding: 1rem;
+  position: relative;
+  font-weight: bold;
+  font-family: 'Oswald';
+  text-transform: uppercase;
+}
+
+.navbar a::after {
+  bottom: .9rem;
+  height: 4px;
+  background: #80CBC4;
+  content: '';
+  position: absolute;
+  left: 1rem;
+  right: .5rem;
+}
+
+.content {
+  margin: 3rem 0;
+}
+
+img {
+  border-radius: 5px;
+  width: 100%;
+}
+
+.portfolio hr {
+  margin: 4rem auto;
+  width: 10%;
+  border-color: #80CBC4;
+  color: #80CBC4;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.portfolio h1 {
+  margin-bottom: 4rem;
 }
